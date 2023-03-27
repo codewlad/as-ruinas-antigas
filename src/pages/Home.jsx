@@ -4,8 +4,8 @@ function Home() {
       
       <header>
         <div>
-          <img class="imgLogo" src="" alt="Logo" />
-          <img class="imgTitle" src="../src/img/as-ruinas-antigas.png" alt="As Ruínas Antigas" />
+          <img className="imgLogo" src="../src/img/logo.png" alt="Logo" />
+          <img className="imgTitle" src="../src/img/as-ruinas-antigas.png" alt="As Ruínas Antigas" />
         </div>
         <div>
           <nav>
