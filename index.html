@@ -6,10 +6,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/style.css" content-Type="text/css">
     <title>As Ruínas Antigas</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/pages/main.jsx"></script>
+    <div id="container">      
+      <header>
+        <div>
+          <img class="imgLogo" src="../src/img/logo.png" alt="Logo" />
+          <img class="imgTitle" src="../src/img/as-ruinas-antigas.png" alt="As Ruínas Antigas" />
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li><a id="linkTheGame">O Jogo</a></li>
+              <li><a id="linkImages">Imagens</a></li>
+              <li><a id="linkMechanics">Mecânicas</a></li>
+              <li><a id="linkPlayDownload">Jogar/Download</a></li>
+            </ul>
+          </nav>
+        </div>        
+      </header>
+
+      <main>
+        <div id="thegame">
+          <h2>O Jogo</h2>
+
+          <p>Em As Ruínas Antigas você estará na pele do arqueólogo Raul, que acaba preso num labirinto enquanto investigava um local há muito tempo abandonado.</p>
+
+          <p>Você precisará usar a cabeça e prestar atenção em todos os detalhes para desvendar os mistérios e escapar em segurança!</p>
+
+          <p>Será que você está preparado para este desafio?</p>
+        </div>
+        <div id="images">
+          <h2>Imagens</h2>
+          <p>Conteúdo</p>
+        </div>
+        <div id="mechanics">
+          <h2>Mecânicas</h2>
+          <p>Conteúdo</p>
+        </div>
+        <div id="playdownload">
+          <h2>Jogar / Download</h2>
+          <p>Conteúdo</p>
+        </div>
+      </main>      
+    </div>
+    <script src="/src/js/script.js"></script>
   </body>
 </html>
