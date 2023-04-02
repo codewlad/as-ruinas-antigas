@@ -2,7 +2,6 @@ var divClicked = ''
 
 function posicao(e) {
     e = e.target.id.substring(4).toLowerCase()
-    const headerPadding = 125
     const divArray = ["thegame", "images", "mechanics", "playdownload"]
     var totalHeight = 0, position = 0, cont = 0
     divArray.map(moveToDive)

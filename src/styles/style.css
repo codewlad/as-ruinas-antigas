@@ -5,6 +5,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
@@ -24,6 +28,24 @@ body {
     gap: 10px;
     margin-bottom: 10px;
     padding: 20px 20px 10px;
+    z-index: 1;
+}
+
+header {
+    animation-name: show-up-down;
+    animation-duration: 1s;
+}
+
+@keyframes show-up-down {
+    0% {
+        padding-top: 0px;
+        opacity: 0;
+    }
+
+    100% {
+        padding-top: 20px;
+        opacity: 1;
+    }
 }
 
 header div:first-child {
@@ -61,7 +83,7 @@ ul {
     gap: 3px;
 }
 
-li {
+ul a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,6 +93,15 @@ li {
     background-color: #009933;
     color: #000;
     border-radius: 10px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+ul a:hover {
+    opacity: 0.8;
+    height: 35px;
+    transition-duration: 0.3;
 }
 
 main {
@@ -90,7 +121,25 @@ main {
     border-radius: 10px;
     margin: 0 20px;
     padding: 10px;
-    height: calc(100vh - 145px);
+    min-height: calc(100vh - 145px);
+    animation-name: show-down-up;
+    animation-duration: 1s;
+}
+
+@keyframes show-down-up {
+    0% {
+        padding-top: 30px;
+        opacity: 0;
+    }
+
+    100% {
+        padding-top: 10px;
+        opacity: 1;
+    }
+}
+
+#images img {
+    max-width: 300px;
 }
 
 #playdownload {
